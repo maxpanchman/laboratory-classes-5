@@ -1,0 +1,16 @@
+<div class="card">
+    <img src="https://picsum.photos/300/200" alt="<%= product.name %>" class="card__image" />
+    <h3 class="card__title">
+        <%= product.name %>
+    </h3>
+    <p class="card__description">
+        <%= product.description %>
+    </p>
+    <p class="card__price">$
+        <%= product.price %>
+    </p>
+    <a href="/products/<%= product.name %>" class="card__link">View Details</a>
+    <button class="card__delete-btn" data-product-name="<%= product.name %>">
+    Delete
+  </button>
+</div>
